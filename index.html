@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Pokémon Quiz</h1>
+  </header>
+
+  <main>
+    <section class="start-screen">
+      <h2>Start Screen Wireframe</h2>
+      
+      <div>
+        <p>Are you a Pokémon Master? Take this quiz to find out!</p>
+       <button>Start Quiz</button>
+      </div>
+    </section>
+
+    <!-- Question Page -->
+    <section class="question-screen">
+      <div class="question">
+        <form accept-charset="UTF-8" action="" autocomplete="off" method="" target="">
+          <label for="question-1">
+            <h2>What Pokémon does Pikachu evolve into?</h2>
+          </label>
+          <input type="radio" id="question-1" name="response" value=""/>Pichu</br>
+          <input type="radio" id="question-1" name="response" value=""/>Plusle</br>
+          <input type="radio" id="question-1" name="response" value=""/>Raichu</br>
+          <input type="radio" id="question-1" name="response" value=""/>Raikou</br>
+          <button type="button">Submit</button>
+        </form>
+        <div id="question-standing">Question #: </div>
+        <div id="score">Score: </div>
+      </div>
+    </section>
+
+    <!-- Feedback Pages -->
+    <section class="correct-feedback-page">
+      <h2>Correct!</h2>
+      <div>
+        <img src="images/cheering-pikachu.gif" alt="Picture of Pikachu cheering you on" >
+      </div>
+      <div id="question-standing">Question #: </div>
+      <div id="score">Score: </div>
+      <button type="button">Next Question</button>
+    </section>
+
+    <section class="incorrect-feedback-page">
+      <h2>Incorrect!</h2>
+      <div>
+        <img src="images/sad-pikachu.gif" alt="Picture of a crying Pikachu">
+        <p>Don't worry, you'll get the next one!</p>
+      </div>
+      <div id="question-standing">Question #: </div>
+      <div id="score">Score: </div>
+      <button type="button">Next Question</button>
+    </section>
+
+    <!-- Results Page -->
+    <section class="results-screen">
+      <h2>Final Score</h2>
+      <div>
+        <img src="images/pikachu-audience.gif" alt="Picture of many Pikachu clapping">
+      </div>
+      <button>Try Again?</button>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
